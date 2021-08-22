@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".ToBeFragment">
+
+    <TextView
+        android:id="@+id/singular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/i_am_hun"
+        app:layout_constraintBottom_toBottomOf="@+id/you_are_singular_hun"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/singular" />
+
+    <TextView
+        android:id="@+id/i_am_hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/singular"
+        app:layout_constraintEnd_toStartOf="@id/i_am_de"
+        android:text="@string/i_am_hun"
+        />
+
+    <TextView
+        android:id="@+id/i_am_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/i_am_hun"
+        app:layout_constraintStart_toEndOf="@+id/i_am_hun"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/i_am_de"
+        />
+
+    <TextView
+        android:id="@+id/you_are_singular_hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/i_am_hun"
+        app:layout_constraintStart_toStartOf="@id/i_am_hun"
+        android:text="@string/you_are_singular_hun"
+        />
+
+    <TextView
+        android:id="@+id/you_are_singular_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/i_am_de"
+        app:layout_constraintStart_toStartOf="@+id/i_am_de"
+        android:text="@string/you_are_singular_de"
+        />
+
+    <TextView
+        android:id="@+id/masculine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/he_is_hun"
+        app:layout_constraintBottom_toBottomOf="@+id/he_is_hun"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/masculine" />
+
+    <TextView
+        android:id="@+id/he_is_hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/you_are_singular_hun"
+        app:layout_constraintStart_toStartOf="@id/i_am_hun"
+        android:layout_marginTop="8dp"
+        android:text="@string/he_is_hun"
+        />
+
+    <TextView
+        android:id="@+id/he_is_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/he_is_hun"
+        app:layout_constraintStart_toStartOf="@+id/i_am_de"
+        android:text="@string/he_is_de"
+        />
+
+    <TextView
+        android:id="@+id/feminine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/she_is_hun"
+        app:layout_constraintBottom_toBottomOf="@+id/she_is_hun"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/feminine" />
+
+    <TextView
+        android:id="@+id/she_is_hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/he_is_hun"
+        app:layout_constraintStart_toStartOf="@id/i_am_hun"
+        android:text="@string/she_is_hun"
+        />
+
+    <TextView
+        android:id="@+id/she_is_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/he_is_hun"
+        app:layout_constraintStart_toStartOf="@+id/i_am_de"
+        android:text="@string/she_is_de"
+        />
+
+    <TextView
+        android:id="@+id/neuter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/it_is_hun"
+        app:layout_constraintBottom_toBottomOf="@+id/it_is_hun"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/neuter" />
+
+    <TextView
+        android:id="@+id/it_is_hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/she_is_hun"
+        app:layout_constraintStart_toStartOf="@id/i_am_hun"
+        android:text="@string/it_is_hun"
+        />
+
+    <TextView
+        android:id="@+id/it_is_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/it_is_hun"
+        app:layout_constraintStart_toStartOf="@+id/i_am_de"
+        android:text="@string/it_is_de"
+        />
+
+    <TextView
+        android:id="@+id/plural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/we_are_hun"
+        app:layout_constraintBottom_toBottomOf="@+id/they_are_hun"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/plural" />
+
+    <TextView
+        android:id="@+id/we_are_hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/it_is_hun"
+        app:layout_constraintStart_toStartOf="@id/i_am_hun"
+        android:layout_marginTop="8dp"
+        android:text="@string/we_are_hun"
+        />
+
+    <TextView
+        android:id="@+id/we_are_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/we_are_hun"
+        app:layout_constraintStart_toStartOf="@+id/i_am_de"
+        android:text="@string/we_are_de"
+        />
+
+    <TextView
+        android:id="@+id/you_are_plural_hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/we_are_hun"
+        app:layout_constraintStart_toStartOf="@id/i_am_hun"
+        android:text="@string/you_are_plural_hun"
+        />
+
+    <TextView
+        android:id="@+id/you_are_plural_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/you_are_plural_hun"
+        app:layout_constraintStart_toStartOf="@+id/i_am_de"
+        android:text="@string/you_are_plural_de"
+        />
+
+    <TextView
+        android:id="@+id/they_are_hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/you_are_plural_hun"
+        app:layout_constraintStart_toStartOf="@id/i_am_hun"
+        android:text="@string/they_are_hun"
+        />
+
+    <TextView
+        android:id="@+id/they_are_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/you_are_plural_de"
+        app:layout_constraintStart_toStartOf="@+id/i_am_de"
+        android:text="@string/they_are_de"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
