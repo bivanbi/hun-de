@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".DefiniteDeterminerFragment">
+
+    <!-- NOMINATIVE MODE -->
+    <TextView
+        android:id="@+id/pronoun_nominative_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/nominative_mode" />
+
+
+    <TextView
+        android:id="@+id/pronoun_nominative_singular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_i"
+        app:layout_constraintBottom_toBottomOf="@+id/pronoun_nominative_you_singular"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/singular"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_mode"
+        app:layout_constraintStart_toEndOf="@id/pronoun_nominative_singular"
+        app:layout_constraintEnd_toStartOf="@id/pronoun_nominative_i_de"
+        android:text="@string/pronoun_nominative_i"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_i_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_i"
+        app:layout_constraintStart_toEndOf="@+id/pronoun_nominative_i"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/pronoun_nominative_i_de"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_you_singular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_i"
+        app:layout_constraintStart_toStartOf="@+id/pronoun_nominative_i"
+        android:text="@string/pronoun_nominative_you_singular"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_you_singular_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_you_singular"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_you_singular"
+        app:layout_constraintStart_toStartOf="@+id/pronoun_nominative_i_de"
+        android:text="@string/pronoun_nominative_you_singular_de"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_masculine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_he"
+        app:layout_constraintBottom_toBottomOf="@+id/pronoun_nominative_he"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/masculine"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_he"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_you_singular"
+        app:layout_constraintStart_toStartOf="@id/pronoun_nominative_i"
+        android:text="@string/pronoun_nominative_he"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_he_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_he"
+        app:layout_constraintStart_toStartOf="@+id/pronoun_nominative_i_de"
+        android:text="@string/pronoun_nominative_he_de"/>
+
+
+    <TextView
+        android:id="@+id/pronoun_nominative_feminine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_she"
+        app:layout_constraintBottom_toBottomOf="@+id/pronoun_nominative_she"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/feminine"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_she"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_he"
+        app:layout_constraintStart_toStartOf="@id/pronoun_nominative_i"
+        android:text="@string/pronoun_nominative_she"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_she_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_she"
+        app:layout_constraintStart_toStartOf="@+id/pronoun_nominative_i_de"
+        android:text="@string/pronoun_nominative_she_de"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_neuter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_it"
+        app:layout_constraintBottom_toBottomOf="@+id/pronoun_nominative_it"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/neuter"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_she"
+        app:layout_constraintStart_toStartOf="@id/pronoun_nominative_i"
+        android:text="@string/pronoun_nominative_it"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_it_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_it"
+        app:layout_constraintStart_toStartOf="@+id/pronoun_nominative_i_de"
+        android:text="@string/pronoun_nominative_it_de"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_plural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_we"
+        app:layout_constraintBottom_toBottomOf="@+id/pronoun_nominative_they"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/plural"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_we"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_it"
+        app:layout_constraintStart_toStartOf="@id/pronoun_nominative_i"
+        android:text="@string/pronoun_nominative_we"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_we_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_we"
+        app:layout_constraintStart_toStartOf="@+id/pronoun_nominative_i_de"
+        android:text="@string/pronoun_nominative_we_de"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_you_plural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_we"
+        app:layout_constraintStart_toStartOf="@id/pronoun_nominative_i"
+        android:text="@string/pronoun_nominative_you_plural"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_you_plural_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_you_plural"
+        app:layout_constraintStart_toStartOf="@+id/pronoun_nominative_i_de"
+        android:text="@string/pronoun_nominative_you_plural_de"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_they"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pronoun_nominative_you_plural"
+        app:layout_constraintStart_toStartOf="@id/pronoun_nominative_i"
+        android:text="@string/pronoun_nominative_they"/>
+
+    <TextView
+        android:id="@+id/pronoun_nominative_they_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/pronoun_nominative_they"
+        app:layout_constraintStart_toStartOf="@+id/pronoun_nominative_i_de"
+        android:text="@string/pronoun_nominative_they"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

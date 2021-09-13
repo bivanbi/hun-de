@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".DefiniteDeterminerFragment">
+
+    <TextView
+        android:id="@+id/definite_determiner_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/definite_determiner_masculine"
+        android:text="@string/mode" />
+
+    <TextView
+        android:id="@+id/definite_determiner_masculine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_mode"
+        app:layout_constraintStart_toEndOf="@+id/definite_determiner_mode"
+        app:layout_constraintEnd_toStartOf="@+id/definite_determiner_feminine"
+        android:text="@string/masculine_short"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_feminine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_mode"
+        app:layout_constraintStart_toEndOf="@+id/definite_determiner_masculine"
+        app:layout_constraintEnd_toStartOf="@+id/definite_determiner_neuter"
+        android:text="@string/feminine_short"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_neuter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_mode"
+        app:layout_constraintStart_toEndOf="@+id/definite_determiner_feminine"
+        app:layout_constraintEnd_toStartOf="@+id/definite_determiner_plural"
+        android:text="@string/neuter_short"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_plural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_mode"
+        app:layout_constraintStart_toEndOf="@+id/definite_determiner_neuter"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/plural_short"/>
+
+    <!-- NOMINATIVE MODE -->
+    <TextView
+        android:id="@+id/definite_determiner_nominative_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/definite_determiner_mode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/definite_determiner_masculine"
+        android:text="@string/nominative_mode" />
+
+    <TextView
+        android:id="@+id/definite_determiner_nominative_masculine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_masculine"
+        android:text="@string/definite_determiner_nominative_masculine_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_nominative_feminine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_feminine"
+        android:text="@string/definite_determiner_nominative_feminine_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_nominative_neuter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_neuter"
+        android:text="@string/definite_determiner_nominative_neuter_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_nominative_plural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_plural"
+        android:text="@string/definite_determiner_nominative_plural_de"/>
+
+
+    <!-- ACCUSATIVE MODE -->
+    <TextView
+        android:id="@+id/definite_determiner_accusative_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/definite_determiner_nominative_mode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/definite_determiner_masculine"
+        android:text="@string/accusative_mode" />
+
+    <TextView
+        android:id="@+id/definite_determiner_accusative_masculine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_masculine"
+        android:text="@string/definite_determiner_accusative_masculine_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_accusative_feminine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_feminine"
+        android:text="@string/definite_determiner_accusative_feminine_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_accusative_neuter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_neuter"
+        android:text="@string/definite_determiner_accusative_neuter_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_accusative_plural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_plural"
+        android:text="@string/definite_determiner_accusative_plural_de"/>
+
+    <!-- DATIVE MODE -->
+    <TextView
+        android:id="@+id/definite_determiner_dative_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/definite_determiner_accusative_mode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/definite_determiner_masculine"
+        android:text="@string/dative_mode" />
+
+    <TextView
+        android:id="@+id/definite_determiner_dative_masculine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_dative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_dative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_masculine"
+        android:text="@string/definite_determiner_dative_masculine_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_dative_feminine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_dative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_dative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_feminine"
+        android:text="@string/definite_determiner_dative_feminine_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_dative_neuter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_dative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_dative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_neuter"
+        android:text="@string/definite_determiner_dative_neuter_de"/>
+
+    <TextView
+        android:id="@+id/definite_determiner_dative_plural"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/definite_determiner_dative_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/definite_determiner_dative_mode"
+        app:layout_constraintStart_toStartOf="@+id/definite_determiner_plural"
+        android:text="@string/definite_determiner_dative_plural_de"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

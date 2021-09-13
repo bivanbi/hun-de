@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StartFragment">
+
+    <data>
+        <variable
+            name="mainFragment"
+            type="org.kign.hunde.MainFragment" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/to_be_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:minWidth="@dimen/main_fragment_button_width"
+                android:onClick="@{() -> mainFragment.navigateToFragment(@id/action_mainFragment_to_toBeFragment)}"
+                android:text="@string/to_be_nominative_fragment_label" />
+
+            <Button
+                android:id="@+id/pronoun_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:minWidth="@dimen/main_fragment_button_width"
+                android:onClick="@{() -> mainFragment.navigateToFragment(@id/action_mainFragment_to_pronounFragment)}"
+                android:text="@string/pronoun_fragment_label" />
+
+            <Button
+                android:id="@+id/definite_determiner_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:minWidth="@dimen/main_fragment_button_width"
+                android:onClick="@{() -> mainFragment.navigateToFragment(@id/action_mainFragment_to_definiteDeterminerFragment)}"
+                android:text="@string/definite_determiner_fragment_label" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
