@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.29333333333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23049645390070922" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.23049645390070922" />
         <entry key="app/src/main/res/layout/fragment_definite_determiner.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.22644927536231885" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.22" />

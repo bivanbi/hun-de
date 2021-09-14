@@ -1,6 +1,9 @@
 <resources>
+    <string name="app_version">v0.1.0 beta</string>
+    <string name="app_last_updated">Utolsó frissítés: 2021.09.14</string>
     <string name="app_name">Hun-DE</string>
     <string name="action_settings">Settings</string>
+    <string name="action_about">Névjegy</string>
     <string name="to_be_nominative_fragment_label">Én vagyok</string>
     <string name="pronoun_fragment_label">Én, te, ő, mi, ti, ők</string>
     <string name="definite_determiner_fragment_label">A, az</string>
@@ -9,6 +12,8 @@
     <string name="to_be_dative_label">Velem, nekem, tőlem</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
+    <string name="hunde_logo_content_description">Hun-DE app logó</string>
 
     <string name="singular">egyes szám</string>
     <string name="singular_short">egyes</string>
@@ -83,5 +88,6 @@
     <string name="pronoun_nominative_you_plural_de">ihr</string>
     <string name="pronoun_nominative_they">ők</string>
     <string name="pronoun_nominative_they_de">sie</string>
-
+    <string name="about_text">A Hun-DE egy egyszerű applikáció, ami a német nyelv tanulását segíti
+    összefoglaló táblázatokkal.</string>
 </resources>

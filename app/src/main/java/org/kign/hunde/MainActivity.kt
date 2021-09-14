@@ -1,13 +1,13 @@
 package org.kign.hunde
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
 import org.kign.hunde.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_about -> this.onAboutItemSelected()
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -44,5 +44,11 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+
+    private fun onAboutItemSelected(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        navController.navigate(R.id.aboutFragment)
+        return true
     }
 }

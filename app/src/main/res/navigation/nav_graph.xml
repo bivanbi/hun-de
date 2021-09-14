@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_mainFragment_to_pronounFragment"
             app:destination="@id/pronounFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
     </fragment>
 
     <fragment
@@ -40,5 +43,11 @@
         android:name="org.kign.hunde.PronounFragment"
         android:label="@string/pronoun_fragment_label"
         tools:layout="@layout/fragment_pronoun" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="org.kign.hunde.AboutFragment"
+        android:label="@string/action_about"
+        tools:layout="@layout/fragment_about" />
 
 </navigation>
