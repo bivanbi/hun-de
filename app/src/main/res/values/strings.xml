@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_version">v0.1.0 beta</string>
     <string name="app_last_updated">Utolsó frissítés: 2021.09.14</string>
     <string name="app_name">Hun-DE</string>
     <string name="action_settings">Settings</string>

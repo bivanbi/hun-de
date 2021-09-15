@@ -31,21 +31,12 @@
         app:layout_constraintTop_toBottomOf="@+id/about_hunde_icon" />
 
     <TextView
-        android:id="@+id/about_app_version"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_hunde_title"
-        android:text="@string/app_version" />
-
-    <TextView
         android:id="@+id/about_app_last_updated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_app_version"
+        app:layout_constraintTop_toBottomOf="@+id/about_hunde_title"
         android:text="@string/app_last_updated" />
 
     <TextView
